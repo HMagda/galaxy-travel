@@ -1,0 +1,42 @@
+@import "../../styles/settings.scss";
+
+.navMain {
+  background-color: darken($color-dark, 3%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  .logo {
+    height: ($base-size * 6);
+    width: ($base-size * 6);
+    transition: 0.4s cubic-bezier(0.4, 0, 1, 1);
+    color: $color-light;
+    padding: ($base-size * 2);
+
+    &:hover {
+      cursor: pointer;
+      transform: rotate(360deg);
+      color: $color-warning;
+    }
+  }
+
+  .navMainUl {
+    list-style: none;
+    display: flex;
+    padding-right: ($base-size * 2);
+
+    .navMainLi {
+      padding: $base-size;
+
+      a {
+        color: $color-light;
+        text-decoration: none;
+        padding: ($base-size * 2);
+      }
+
+      .linkActive {
+        color: $color-warning;
+      }
+    }
+  }
+}

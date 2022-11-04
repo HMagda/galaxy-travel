@@ -4,7 +4,7 @@ const reducer = (state, action) => {
 };
 
 const initialState = {
-  columns: []
+  
 };
 
 const store = createStore(
