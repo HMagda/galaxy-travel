@@ -1,10 +1,15 @@
 @import "../../styles/settings.scss";
 
+@mixin respond-large {
+    @media (max-width: 1240px) { @content }
+  }
+
 .navMain {
   background-color: darken($color-dark, 3%);
   display: flex;
   justify-content: space-between;
   width: 100%;
+  z-index: 10;
 
   .logo {
     height: ($base-size * 6);
@@ -25,18 +30,65 @@
     display: flex;
     padding-right: ($base-size * 2);
 
+    &.active {
+        left: 0;
+    }
+
+    @include respond-large {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: -100%;
+        // left: 0;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        transition: .3s;
+        z-index: -1;
+        background: rgba(255,255,255, .2);
+
+     }
+
     .navMainLi {
       padding: $base-size;
+
+      @include respond-large {
+        padding: ($base-size * 2.5);
+        font-size: ($base-size * 2);
+      }
 
       a {
         color: $color-light;
         text-decoration: none;
         padding: ($base-size * 2);
+
+        @include respond-large {
+            padding: $base-size;
+          }
       }
 
       .linkActive {
         color: $color-warning;
       }
+
+    }
+
+ 
+  }
+
+  .hamburger {
+    display: none;
+
+    @include respond-large {
+        display: block;
+        padding: ($base-size * 2);
+        font-size: ($base-size * 2);
+
+        &:hover {
+            cursor: pointer;
+        }
     }
   }
 }
