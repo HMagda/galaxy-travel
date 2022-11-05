@@ -1,0 +1,77 @@
+@import "../../styles/settings.scss";
+
+@mixin respond-large {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  object-fit: contain;
+
+  .video {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .content {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    top: 40vh;
+
+    h1 {
+      font-size: ($base-size * 8);
+
+      @include respond-large {
+        font-size: ($base-size * 6);
+      }
+    }
+
+    p {
+      font-size: ($base-size * 4);
+      text-transform: uppercase;
+
+      @include respond-large {
+        font-size: ($base-size * 2);
+      }
+    }
+
+    .btn_wrapper {
+
+        margin-top: ($base-size * 6);
+
+      .btn {
+        text-decoration: none;
+        color: $color-light;
+        padding: ($base-size * 1.5);
+        font-size: ($base-size * 2);
+        border: solid;
+        margin: ($base-size * 2);
+        background-color: rgba($color: $color-dark, $alpha: 0.6);
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: rgba($color: $color-dark, $alpha: 1);
+        }
+
+        @include respond-large {
+            font-size: ($base-size * 1.5);
+            padding: ($base-size * 1.2);
+            margin: $base-size;
+          }
+      }
+
+      @include respond-large {
+        margin-top: ($base-size * 4);
+      }
+    }
+  }
+}

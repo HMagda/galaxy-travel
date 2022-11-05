@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import {FaRocket, FaBars, FaTimes} from "react-icons/fa";
-// import styles from "./Navbar.module.scss";
 import styles from "./Navbar.module.scss";
 import {Link, NavLink} from "react-router-dom";
 
@@ -22,7 +21,7 @@ const Navbar = () => {
         }
       >
         <li className={styles.navMainLi}>
-          <NavLink
+          <NavLink onClick={handleClick}
             className={({isActive}) =>
               isActive ? styles.linkActive : undefined
             }
@@ -32,7 +31,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className={styles.navMainLi}>
-          <NavLink
+          <NavLink onClick={handleClick}
             className={({isActive}) =>
               isActive ? styles.linkActive : undefined
             }
@@ -42,7 +41,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className={styles.navMainLi}>
-          <NavLink
+          <NavLink onClick={handleClick}
             className={({isActive}) =>
               isActive ? styles.linkActive : undefined
             }
@@ -52,7 +51,7 @@ const Navbar = () => {
           </NavLink>
         </li>
         <li className={styles.navMainLi}>
-          <NavLink
+          <NavLink onClick={handleClick}
             className={({isActive}) =>
               isActive ? styles.linkActive : undefined
             }

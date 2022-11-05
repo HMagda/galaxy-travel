@@ -1,10 +1,10 @@
 import React from 'react';
-// import Navbar from '../components/Navbar/Navbar';
+import Video from '../components/Video/Video';
 
 const Home = () => {
   return (
     <>
-
+      <Video />
 
     </>
   )
