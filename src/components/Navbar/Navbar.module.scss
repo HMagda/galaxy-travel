@@ -1,17 +1,11 @@
 @import "../../styles/settings.scss";
 
-@mixin respond-large {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
-
 .navMain {
   background-color: rgba($color: $color-dark, $alpha: 0.6);
   display: flex;
   justify-content: space-between;
   width: 100%;
-  z-index: 10;
+  z-index: 2;
   position: fixed;
 
 
@@ -37,7 +31,7 @@
 
     &.active {
       left: 0;
-      z-index: 10;
+      z-index: 2;
     }
 
     @include respond-large {
@@ -87,7 +81,7 @@
       display: block;
       padding: ($base-size * 2);
       font-size: ($base-size * 2);
-      z-index: 20;
+      z-index: 2;
 
       &:hover {
         cursor: pointer;

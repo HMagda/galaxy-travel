@@ -3,8 +3,8 @@ const reducer = (state, action) => {
   return state;
 };
 
-const initialState = {
-  
+export const initialState = {
+  subPages:  ['About Us', 'FAQ', 'Careers', 'Investors']
 };
 
 const store = createStore(

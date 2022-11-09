@@ -1,0 +1,21 @@
+@import "../../styles/settings.scss";
+@import "../../styles/global.scss";
+
+.wrapper {
+  padding: 200px;
+  border: solid white;
+
+  .socials_container {
+    position: relative;
+  }
+
+  .links_container {
+    display: flex;
+    flex-direction: column;
+
+    .link {
+      color: $color-light;
+      text-decoration: none;
+    }
+  }
+}

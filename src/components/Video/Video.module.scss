@@ -1,10 +1,5 @@
 @import "../../styles/settings.scss";
-
-@mixin respond-large {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
+@import "../../styles/global.scss";
 
 .hero {
   height: 100vh;
@@ -16,7 +11,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: -1;
+    z-index: -10;
   }
 
   .content {
@@ -45,28 +40,18 @@
     }
 
     .btn_wrapper {
-
-        margin-top: ($base-size * 6);
+      margin-top: ($base-size * 6);
 
       .btn {
-        text-decoration: none;
-        color: $color-light;
         padding: ($base-size * 1.5);
         font-size: ($base-size * 2);
-        border: solid;
         margin: ($base-size * 2);
-        background-color: rgba($color: $color-dark, $alpha: 0.6);
-        text-transform: uppercase;
-
-        &:hover {
-          background-color: rgba($color: $color-dark, $alpha: 1);
-        }
 
         @include respond-large {
-            font-size: ($base-size * 1.5);
-            padding: ($base-size * 1.2);
-            margin: $base-size;
-          }
+          font-size: ($base-size * 1.5);
+          padding: ($base-size * 1.2);
+          margin: $base-size;
+        }
       }
 
       @include respond-large {

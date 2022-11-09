@@ -1,0 +1,11 @@
+@import "../../styles/settings.scss";
+
+
+.formInput {
+
+    margin-top: $base-size;
+
+    input {
+    padding: $base-size;
+}
+}

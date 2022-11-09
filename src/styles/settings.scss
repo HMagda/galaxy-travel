@@ -1,10 +1,16 @@
-$color-light: #fff;
-$color-dark: #0A101B;
+$color-light: #F6F5F3;
+$color-dark: #0a101b;
 $color-success: #26de81;
 $color-warning: #f1bc2a;
 
-$font-text: 'Poppins', sans-serif;
+$font-text: "Poppins", sans-serif;
 
 $radius: 5px;
 $base-size: 12px;
 $transition: all 0.5s;
+
+@mixin respond-large {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}

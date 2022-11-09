@@ -20,4 +20,17 @@ body {
   margin: 0 auto;
 }
 
+.btn {
+  text-decoration: none;
+  color: $color-light;
+  border: solid;
+  background-color: rgba($color: $color-dark, $alpha: 0.6);
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: rgba($color: $color-dark, $alpha: 1);
+    cursor: pointer;
+  }
+}
+
 @import "./typography.scss";

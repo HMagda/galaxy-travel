@@ -1,0 +1,16 @@
+@import "../../styles/settings.scss";
+
+.social_elem {
+  font-size: ($base-size * 2);
+
+  a {
+    color: $color-light;
+    text-decoration: none;
+
+    .social_icon {
+      font-size: ($base-size * 2);
+      color: $color-light;
+      margin-right: $base-size;
+    }
+  }
+}
