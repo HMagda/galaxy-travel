@@ -9,17 +9,6 @@ import Navbar from "./components/Navbar/Navbar";
 
 const App = () => {
 
-  // function getMaxZIndex() {
-  //   return Math.max(
-  //   ...Array.from(document.querySelectorAll('body *'), el =>
-  //     parseFloat(window.getComputedStyle(el).zIndex),
-  //   ).filter(zIndex => !Number.isNaN(zIndex)),
-  //   0,
-  //   );
-  //   }
-    
-  //   console.log(getMaxZIndex());
-
   return (
     <>
       <Navbar />

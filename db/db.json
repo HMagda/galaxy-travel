@@ -1,0 +1,14 @@
+{
+  "newsletter_data": [
+    {
+      "firstName": "John",
+      "email": "john@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "anna@mail.com",
+      "firstName": "Anna",
+      "id": 2
+    }
+  ]
+}

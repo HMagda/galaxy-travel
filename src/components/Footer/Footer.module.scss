@@ -1,21 +1,71 @@
 @import "../../styles/settings.scss";
 @import "../../styles/global.scss";
 
+h1 {
+  font-weight: 500;
+
+  @include respond-large {
+    font-size: ($base-size * .5);
+  }
+}
+
 .wrapper {
-  padding: 200px;
-  border: solid white;
+  padding: ($base-size * 8);
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  background-color: $color-dark;
 
   .socials_container {
     position: relative;
+    margin-top: $base-size;
+    display: flex;
+    margin-top: ($base-size * 1.5);
+
+    .social_icon {
+      margin-right: $base-size;
+
+      &:hover {
+        color: $color-warning;
+      }
+    }
+
+    @include respond-large {
+      margin-bottom: ($base-size * 3);
+    }
   }
 
   .links_container {
+    position: relative;
     display: flex;
     flex-direction: column;
+    margin-top: ($base-size * 1.5);
 
     .link {
       color: $color-light;
       text-decoration: none;
+      margin-bottom: ($base-size * 0.9);
+
+      &:hover {
+        color: $color-warning;
+      }
     }
+
+    @include respond-large {
+      margin-bottom: ($base-size * 3);
+    }
+  }
+
+  .newsletter_container {
+    position: relative;
+
+    @include respond-large {
+      margin-bottom: ($base-size * 3);
+    }
+  }
+
+  @include respond-large {
+    flex-direction: column;
+    align-items: center;
   }
 }
