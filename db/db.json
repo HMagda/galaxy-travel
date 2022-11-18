@@ -9,6 +9,11 @@
       "email": "anna@mail.com",
       "firstName": "Anna",
       "id": 2
+    },
+    {
+      "email": "anna@mail.com",
+      "firstName": "anna",
+      "id": 3
     }
   ]
 }

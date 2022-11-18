@@ -60,10 +60,32 @@
       a {
         color: $color-light;
         text-decoration: none;
-        padding: ($base-size * 2);
+        padding: $base-size ($base-size * 2);
+        position: relative;
 
         @include respond-large {
           padding: $base-size;
+        }
+
+        &::after {
+          bottom: 0;
+          content: "";
+          display: block;
+          height: 2px;
+          left: 50%;
+          position: absolute;
+          background-color: $color-warning;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
+          width: 0px;
+        }
+
+        &:hover {
+          color: $color-warning;
+
+          &::after {
+            width: 100%;
+            left: 0;
+          }
         }
       }
 
@@ -84,6 +106,7 @@
 
       &:hover {
         cursor: pointer;
+        color: $color-warning;
       }
     }
   }

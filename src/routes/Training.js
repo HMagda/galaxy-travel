@@ -1,13 +1,12 @@
 import React from 'react';
-import Footer from '../components/Footer/Footer';
+import Location from '../components/Location/Location';
 
 const Training = () => {
   return (
-   <div>
-    <Footer />
-   </div>
+    <div>
+      <Location />
+    </div>
+  );
+};
 
-  )
-}
-
-export default Training
+export default Training;

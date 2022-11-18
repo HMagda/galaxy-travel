@@ -1,7 +1,7 @@
-import React from "react";
-import styles from "./Video.module.scss";
-import {Link} from "react-router-dom";
-import videoSpace from "../../assets/space.mp4";
+import React from 'react';
+import styles from './Video.module.scss';
+import {Link} from 'react-router-dom';
+import videoSpace from '../../assets/space.mp4';
 
 const Video = () => {
   return (

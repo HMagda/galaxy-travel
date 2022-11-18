@@ -1,66 +1,82 @@
 @import "../../styles/settings.scss";
 @import "../../styles/global.scss";
 
-h1 {
-  font-weight: 500;
+@mixin headline {
+  h1 {
+    font-weight: 600;
+    color: $color-important;
+    text-transform: uppercase;
 
-  @include respond-large {
-    font-size: ($base-size * .5);
+    @include respond-large {
+      font-size: ($base-size * 2);
+    }
   }
 }
 
-.wrapper {
+.footer_wrapper {
   padding: ($base-size * 8);
   display: flex;
   justify-content: space-between;
   justify-content: space-around;
-  background-color: $color-dark;
+  background-color: rgba($color: $color-dark, $alpha: 0.8);
 
-  .socials_container {
-    position: relative;
-    margin-top: $base-size;
-    display: flex;
-    margin-top: ($base-size * 1.5);
+  .socials_wrapper {
+    @include headline;
 
-    .social_icon {
-      margin-right: $base-size;
+    .socials_container {
+      position: relative;
+      margin-top: $base-size;
+      display: flex;
+      margin-top: ($base-size * 1.5);
 
-      &:hover {
-        color: $color-warning;
+      .social_icon {
+        margin-right: $base-size;
+
+        &:hover {
+          color: $color-warning;
+        }
       }
-    }
 
-    @include respond-large {
-      margin-bottom: ($base-size * 3);
+      @include respond-large {
+        margin-bottom: ($base-size * 3);
+      }
     }
   }
 
-  .links_container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-top: ($base-size * 1.5);
+  .links_wrapper {
+    @include headline;
 
-    .link {
-      color: $color-light;
-      text-decoration: none;
-      margin-bottom: ($base-size * 0.9);
+    .links_container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin-top: ($base-size * 1.5);
 
-      &:hover {
-        color: $color-warning;
+      .link {
+        color: $color-light;
+        text-decoration: none;
+        margin-bottom: ($base-size * 0.9);
+
+        &:hover {
+          color: $color-warning;
+        }
       }
-    }
 
-    @include respond-large {
-      margin-bottom: ($base-size * 3);
+      @include respond-large {
+        margin-bottom: ($base-size * 3);
+        align-items: center
+      }
     }
   }
 
   .newsletter_container {
     position: relative;
 
+    @include headline;
+
     @include respond-large {
       margin-bottom: ($base-size * 3);
+      text-align: center;
     }
   }
 
