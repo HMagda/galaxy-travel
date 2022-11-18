@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import HeroImage from '../components/HeroImage/HeroImage';
 
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div>
+      <HeroImage cta='Contact us for more details' />
+    </div>
+  );
+};
 
 export default Contact;

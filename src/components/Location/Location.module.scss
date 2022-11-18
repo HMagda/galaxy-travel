@@ -1,4 +1,6 @@
 .location_container {
-    width: 30vw;
-    background-color: red;
+  width: 30vw;
+  background-color: red;
+  position: relative;
+  z-index: -1;
 }

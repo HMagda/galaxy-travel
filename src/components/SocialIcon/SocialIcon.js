@@ -1,11 +1,11 @@
-import React from "react";
-import styles from "./SocialIcon.module.scss";
+import React from 'react';
+import styles from './SocialIcon.module.scss';
 
-const SocialIcon = (props) => {
+const SocialIcon = ({url, children}) => {
   return (
     <div className={styles.social_elem}>
-      <a href={props.url} target="_blank" rel="noreferrer">
-        {props.children}
+      <a href={url} target='_blank' rel='noreferrer'>
+        {children}
       </a>
     </div>
   );

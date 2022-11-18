@@ -3,6 +3,7 @@ import {FaRocket, FaBars, FaTimes} from 'react-icons/fa';
 import styles from './Navbar.module.scss';
 import {Link, NavLink} from 'react-router-dom';
 
+
 const Navbar = () => {
   const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
@@ -20,6 +21,7 @@ const Navbar = () => {
           styles.navMainUl + ' ' + (click ? styles.active : styles.navMainUl)
         }
       >
+
         <li className={styles.navMainLi}>
           <NavLink
             onClick={handleClick}
@@ -31,6 +33,7 @@ const Navbar = () => {
             Home
           </NavLink>
         </li>
+
         <li className={styles.navMainLi}>
           <NavLink
             onClick={handleClick}
@@ -42,6 +45,7 @@ const Navbar = () => {
             Pricing
           </NavLink>
         </li>
+
         <li className={styles.navMainLi}>
           <NavLink
             onClick={handleClick}
@@ -53,6 +57,7 @@ const Navbar = () => {
             Training
           </NavLink>
         </li>
+
         <li className={styles.navMainLi}>
           <NavLink
             onClick={handleClick}
@@ -64,6 +69,7 @@ const Navbar = () => {
             Contact
           </NavLink>
         </li>
+
       </ul>
 
       <div className={styles.hamburger} onClick={handleClick}>

@@ -32,7 +32,7 @@
     }
 
     p {
-      font-size: ($base-size * 4);
+      font-size: ($base-size * 3);
       text-transform: uppercase;
 
       @include respond-large {

@@ -17,8 +17,8 @@ const Video = () => {
           <Link to="/training" className={styles.btn}>
             Training
           </Link>
-          <Link to="/contact" className={styles.btn}>
-            Launch
+          <Link to="/pricing" className={styles.btn}>
+            booking
           </Link>
         </div>
       </div>
