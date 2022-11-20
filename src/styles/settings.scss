@@ -4,6 +4,7 @@ $color-success: #26de81;
 $color-warning: #f1bc2a;
 $color-error: #da0d0c;
 $color-important: #59B4F0;
+$color-offer: #316AB1;
 
 $font-text: "Poppins", sans-serif;
 
@@ -13,6 +14,18 @@ $transition: all 0.5s;
 
 @mixin respond-large {
   @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin respond-medium {
+  @media (max-width: 1023px) and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin respond-small {
+  @media (max-width: 767px) {
     @content;
   }
 }

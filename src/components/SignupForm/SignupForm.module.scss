@@ -24,9 +24,5 @@ form {
     padding: $base-size;
     font-size: ($base-size * 1.2);
     margin: $base-size;
-
-    &:hover {
-      color: $color-warning;
-    }
   }
 }

@@ -1,0 +1,37 @@
+@import '../../styles/global.scss';
+@import '../../styles/settings.scss';
+
+.wrapper {
+  border: solid rgba($color: $color-important, $alpha: 0.8);
+  width: 25vw;
+  margin: ($base-size * 4) ($base-size * 2);
+  padding: ($base-size * 4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: $base-size;
+  border-radius: 5%;
+  background-color: rgba($color: $color-offer, $alpha: 0.8);
+
+  .title {
+    &::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background-color: $color-warning;
+      width: 100%;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
+  .btn {
+    width: max-content;
+    padding: $base-size;
+  }
+
+  @include respond-large {
+    width: 75vw;
+  }
+}

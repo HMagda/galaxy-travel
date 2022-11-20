@@ -48,10 +48,6 @@
         font-size: ($base-size * 2);
         margin: ($base-size * 2);
 
-        &:hover {
-          color: $color-warning;
-        }
-
         @include respond-large {
           font-size: ($base-size * 1.5);
           padding: ($base-size * 1.2);

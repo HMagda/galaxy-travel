@@ -1,5 +1,5 @@
-@import "../../styles/settings.scss";
-@import "../../styles/global.scss";
+@import '../../styles/settings.scss';
+@import '../../styles/global.scss';
 
 @mixin headline {
   h1 {
@@ -27,13 +27,17 @@
       position: relative;
       margin-top: $base-size;
       display: flex;
+
+      justify-content: space-between;
       margin-top: ($base-size * 1.5);
 
       .social_icon {
-        margin-right: $base-size;
-
         &:hover {
           color: $color-warning;
+        }
+
+        @include respond-large {
+          margin: $base-size;
         }
       }
 
@@ -64,7 +68,7 @@
 
       @include respond-large {
         margin-bottom: ($base-size * 3);
-        align-items: center
+        align-items: center;
       }
     }
   }
@@ -76,12 +80,12 @@
 
     @include respond-large {
       margin-bottom: ($base-size * 3);
-      text-align: center;
     }
   }
 
   @include respond-large {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 }

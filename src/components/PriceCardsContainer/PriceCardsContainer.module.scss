@@ -1,0 +1,11 @@
+@import '../../styles/settings.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+
+  @include respond-small {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -29,6 +29,7 @@ body {
 
   &:hover {
     background-color: rgba($color: $color-dark, $alpha: 1);
+    color: $color-warning;
     cursor: pointer;
   }
 }
