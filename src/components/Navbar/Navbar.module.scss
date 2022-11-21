@@ -1,4 +1,4 @@
-@import "../../styles/settings.scss";
+@import '../../styles/settings.scss';
 
 .navMain {
   background-color: rgba($color: $color-dark, $alpha: 0.6);
@@ -45,54 +45,53 @@
       width: 100%;
       height: 100vh;
       transition: 0.3s;
-      // z-index: -1;
-      background: rgba(0, 0, 0, 0.9);
+      background-color: rgba($color: $color-dark, $alpha: 0.9);
     }
+
     .navMainLi {
       padding: $base-size;
-  
-      @include respond-large {
-        padding: ($base-size * 2.5);
-        font-size: ($base-size * 2);
-      }
-  
+
       a {
         color: $color-light;
         text-decoration: none;
         padding: $base-size ($base-size * 2);
         position: relative;
-  
+
         @include respond-large {
           padding: $base-size;
         }
-  
+
         &::after {
           bottom: 0;
-          content: "";
+          content: '';
           display: block;
           height: 2px;
           left: 50%;
           position: absolute;
           background-color: $color-warning;
-          transition: width .3s ease 0s, left .3s ease 0s;
+          transition: width 0.3s ease 0s, left 0.3s ease 0s;
           width: 0px;
         }
-  
+
         &:hover {
           color: $color-warning;
-  
+
           &::after {
             width: 100%;
             left: 0;
           }
         }
       }
-  
+
       .linkActive {
         color: $color-warning;
       }
-    }
 
+      @include respond-large {
+        padding: ($base-size * 2.5);
+        font-size: ($base-size * 2);
+      }
+    }
   }
 
   .hamburger {

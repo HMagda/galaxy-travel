@@ -24,7 +24,7 @@
     top: 30vh;
 
     h1 {
-      font-size: ($base-size * 8);
+      font-size: ($base-size * 7);
 
       @include respond-large {
         font-size: ($base-size * 6);
@@ -34,6 +34,8 @@
     p {
       font-size: ($base-size * 3);
       text-transform: uppercase;
+      color: $color-dark;
+      background: rgba($color: $color-important, $alpha: 0.6);
 
       @include respond-large {
         font-size: ($base-size * 2);

@@ -1,7 +1,7 @@
 @import '../../styles/settings.scss';
 
 .hero_img {
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba($color: $color-dark, $alpha: 0.4);
   height: 30vh;
   width: 100%;
   position: relative;

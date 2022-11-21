@@ -83,7 +83,7 @@
     }
   }
 
-  @include respond-large {
+  @include respond-small {
     flex-direction: column;
     align-items: center;
     text-align: center;

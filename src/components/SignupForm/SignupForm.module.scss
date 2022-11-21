@@ -5,6 +5,7 @@ form {
   margin-top: ($base-size * 1.5);
   display: flex;
   flex-direction: column;
+  align-items: center;
 
   input {
     padding: $base-size;
@@ -24,5 +25,6 @@ form {
     padding: $base-size;
     font-size: ($base-size * 1.2);
     margin: $base-size;
+    width: max-content;
   }
 }

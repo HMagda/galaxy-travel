@@ -1,21 +1,21 @@
-import React from "react";
-import styles from "./SignupForm.module.scss";
-import {useFormik} from "formik";
-import * as Yup from "yup";
+import React from 'react';
+import styles from './SignupForm.module.scss';
+import {useFormik} from 'formik';
+import * as Yup from 'yup';
 
 const SignupForm = () => {
   const formik = useFormik({
     initialValues: {
-      firstName: "",
-      email: "",
+      firstName: '',
+      email: '',
     },
 
     onSubmit: (e) => {
       const newsletter_data = {email: e.email, firstName: e.firstName};
-      fetch("http://localhost:8000/newsletter_data", {
-        method: "POST",
+      fetch('http://localhost:8000/newsletter_data', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(newsletter_data),
       })
@@ -32,7 +32,7 @@ const SignupForm = () => {
     },
 
     validationSchema: Yup.object({
-      email: Yup.string().email("Invalid email address").required("Required"),
+      email: Yup.string().email('Invalid email address').required('Required'),
     }),
   });
 

@@ -11,8 +11,8 @@
   align-items: center;
   justify-content: center;
   row-gap: $base-size;
-  border-radius: 5%;
-  background-color: rgba($color: $color-offer, $alpha: 0.8);
+  border-radius: $base-size;
+  background-color: rgba($color: $color-offer, $alpha: 0.7);
 
   .title {
     &::after {
@@ -33,5 +33,9 @@
 
   @include respond-large {
     width: 75vw;
+  }
+
+  &:hover {
+  background-color: rgba($color: $color-offer, $alpha: 1);
   }
 }
