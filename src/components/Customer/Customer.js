@@ -59,7 +59,7 @@ const Customer = () => {
                     : `${styles.opinion_right}`
                 } `}
               >
-                <p>
+                <p className={styles.opinion}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Curabitur elementum purus tellus, vel facilisis quam
                   sollicitudin nec. Phasellus vestibulum sem sed elit convallis

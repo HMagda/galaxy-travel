@@ -6,18 +6,30 @@ function handleSubmit(e) {
   console.log('booked');
 }
 
-const PriceCard = ({title, price, details}) => {
+const PriceCard = ({title, price, time, included, annotation}) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={styles.card_wrapper}>
       <div className={styles.title}>
         <h1>{title}</h1>
       </div>
 
       <h2 className={styles.price}>{price}</h2>
-      <p>{details}</p>
+
+      <div className={styles.included_container}>
+        <p className={styles.included}>{time}</p>
+
+        {included.map((included_elem) => (
+          <p key={included_elem} className={styles.included}>
+            {included_elem}
+          </p>
+        ))}
+      </div>
+
       <button type='submit' className={styles.btn} onClick={handleSubmit}>
         book now!
       </button>
+
+      <p className={styles.annotation}>{annotation}</p>
     </div>
   );
 };

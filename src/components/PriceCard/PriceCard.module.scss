@@ -1,7 +1,8 @@
 @import '../../styles/global.scss';
 @import '../../styles/settings.scss';
+@import 'https://use.fontawesome.com/releases/v5.7.0/css/all.css';
 
-.wrapper {
+.card_wrapper {
   border: solid rgba($color: $color-important, $alpha: 0.8);
   width: 25vw;
   margin: ($base-size * 4) ($base-size * 2);
@@ -12,7 +13,7 @@
   justify-content: center;
   row-gap: $base-size;
   border-radius: $base-size;
-  background-color: rgba($color: $color-offer, $alpha: 0.7);
+  background-color: rgba($color: $color-offer, $alpha: 0.8);
 
   .title {
     &::after {
@@ -26,9 +27,32 @@
     }
   }
 
+  .included_container {
+    .included {
+      &::before {
+        font-family: 'Font Awesome 5 Free';
+        content: '\f058';
+        font-weight: bold;
+        margin-right: $base-size * 0.5;
+      }
+    }
+  }
+
   .btn {
     width: max-content;
     padding: $base-size;
+    margin-top: auto;
+  }
+
+  .annotation {
+    position: relative;
+
+    &::before {
+      font-family: 'Font Awesome 5 Free';
+      content: '\f621';
+      font-weight: bold;
+      margin-right: $base-size * 0.5;
+    }
   }
 
   @include respond-large {
@@ -36,6 +60,6 @@
   }
 
   &:hover {
-  background-color: rgba($color: $color-offer, $alpha: 1);
+    background-color: $color-offer;
   }
 }

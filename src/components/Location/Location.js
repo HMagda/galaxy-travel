@@ -13,7 +13,7 @@ const Location = () => {
           Washington, DC 20546 <br />
           <br />
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dictum arcu mauris, in condimentum neque tincidunt et. Morbi ut nunc ut sem ullamcorper tristique porttitor ut neque. Morbi fringilla mi sed risus consectetur aliquet. Duis ut erat vitae lorem volutpat mattis. Proin libero justo, lacinia non turpis in, aliquam aliquet nisi. Aenean rutrum congue mauris, sit amet lacinia odio euismod sit amet. Etiam pellentesque eget enim in finibus. Donec iaculis, urna a rutrum viverra, nisi nulla dignissim odio, et viverra neque nulla et purus. Nulla iaculis fringilla accumsan. 
+          Aenean rutrum congue mauris, sit amet lacinia odio euismod sit amet. Etiam pellentesque eget enim in finibus. Donec iaculis, urna a rutrum viverra, nisi nulla dignissim odio, et viverra neque nulla et purus. Nulla iaculis fringilla accumsan. 
         </p>
       </div>
       <Map />

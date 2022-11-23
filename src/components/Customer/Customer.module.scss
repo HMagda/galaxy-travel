@@ -1,10 +1,9 @@
 @import '../../styles/settings.scss';
 
-$color-opinion: royalblue;
-
 @mixin option {
   position: relative;
-  background: $color-opinion;
+  color: $color-dark;
+  background: $color-light;
   border-radius: 0.4em;
   height: min-content;
   padding: $base-size;
@@ -39,7 +38,7 @@ $color-opinion: royalblue;
       width: 0;
       height: 0;
       border: 1.594em solid transparent;
-      border-right-color: $color-opinion;
+      border-right-color: $color-light;
       border-left: 0;
       border-bottom: 0;
       margin-top: -0.797em;
@@ -58,11 +57,21 @@ $color-opinion: royalblue;
       width: 0;
       height: 0;
       border: 1.594em solid transparent;
-      border-left-color: $color-opinion;
+      border-left-color: $color-light;
       border-right: 0;
       border-bottom: 0;
       margin-top: -0.797em;
       margin-right: -1.594em;
+    }
+  }
+
+  .opinion {
+    &::before {
+      content: open-quote;
+    }
+
+    &::after {
+      content: close-quote;
     }
   }
 }

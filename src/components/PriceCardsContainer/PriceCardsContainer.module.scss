@@ -3,6 +3,7 @@
 .container {
   display: flex;
   justify-content: center;
+  background: url(../../assets/astronaut.jpg) no-repeat center/cover fixed;
 
   @include respond-small {
     flex-direction: column;

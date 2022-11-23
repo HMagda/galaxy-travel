@@ -11,7 +11,7 @@
   flex-direction: row-reverse;
 
   .description {
-    padding: ($base-size * 5);
+    padding: ($base-size * 4);
     width: 100%;
   }
   @include respond-small {
