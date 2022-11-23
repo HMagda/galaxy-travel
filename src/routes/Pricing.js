@@ -1,5 +1,5 @@
 import React from 'react';
-import Customer from '../components/Customer/Customer';
+import CustomerOpinion from '../components/CustomerOpinion/CustomerOpinion';
 import Footer from '../components/Footer/Footer';
 import HeroImage from '../components/HeroImage/HeroImage';
 import PriceCardsContainer from '../components/PriceCardsContainer/PriceCardsContainer';
@@ -13,7 +13,7 @@ const Pricing = () => {
     <>
       <HeroImage cta='Book your trip now!' />
       <PriceCardsContainer />
-      <Customer/>
+      <CustomerOpinion/>
 
       <Footer />
     </>

@@ -1,12 +1,12 @@
-import React, {useState, useEffect, useRef} from 'react';
-import {initialState} from '../../redux/store';
-import styles from './Customer.module.scss';
+import React, {useState, useEffect} from 'react';
+// import {initialState} from '../../redux/store';
+import styles from './CustomerOpinion.module.scss';
 
 const url = 'https://randomuser.me/api/?results=3';
 
-const Customer = () => {
-  const [users, setUsers] = useState(initialState.users);
-  //   const [users, setUsers] = useState([]);
+const CustomerOpinion = () => {
+  // const [users, setUsers] = useState(initialState.users);
+  const [users, setUsers] = useState([]);
 
   const fetchUserData = async () => {
     const resp = await fetch(url);
@@ -16,13 +16,14 @@ const Customer = () => {
 
   //   const imageRef = useRef();
 
-  //   useEffect(() => {
-  //     fetchUserData();
-  //   }, []);
+  useEffect(() => {
+    fetchUserData();
+  }, []);
 
   return (
     <>
-      <section>
+      <h1 className={styles.heading}>What our customers say about us</h1>
+      <div className={styles.opinion_wrapper}>
         {users.map((user, i) => {
           const {
             name: {first, last},
@@ -40,7 +41,7 @@ const Customer = () => {
               } `}
             >
               <div className={styles.customer}>
-                <img src={large} alt={first} />
+                <img className={styles.img} src={large} alt={first} />
 
                 <div className={styles.customer_data}>
                   <h3>
@@ -55,8 +56,8 @@ const Customer = () => {
                 key={i}
                 className={`${
                   i % 2 === 0
-                    ? `${styles.opinion_left}`
-                    : `${styles.opinion_right}`
+                    ? `${styles.opinion_right}`
+                    : `${styles.opinion_left}`
                 } `}
               >
                 <p className={styles.opinion}>
@@ -74,9 +75,9 @@ const Customer = () => {
             </div>
           );
         })}
-      </section>
+      </div>
     </>
   );
 };
 
-export default Customer;
+export default CustomerOpinion;

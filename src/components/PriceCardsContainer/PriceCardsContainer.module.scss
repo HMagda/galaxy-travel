@@ -9,4 +9,8 @@
     flex-direction: column;
     align-items: center;
   }
+  @include respond-medium {
+    flex-direction: column;
+    align-items: center;
+  }
 }

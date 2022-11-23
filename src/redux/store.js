@@ -1,6 +1,6 @@
 import {createStore} from 'redux';
 
-const reducer = (state, action) => {
+const reducer = (state) => {
   return state;
 };
 
@@ -9,7 +9,7 @@ export const initialState = {
   optionsIncluded: {
     basicOptions: {
       title: 'Basic',
-      price: '$1 bilion',
+      price: '$1 billion',
       time: '24 hours in space',
       options: [
         'a room with a view of the Earth',
@@ -23,14 +23,14 @@ export const initialState = {
 
     standardOptions: {
       title: 'Standard',
-      price: '$2 bilion',
+      price: '$2 billion',
       time: '48 hours in space',
       options: ['a photo with the entire crew'],
     },
 
     premiumOptions: {
       title: 'Premium',
-      price: '$3 bilion',
+      price: '$3 billion',
       time: '48 hours in space',
       options: [
         'butler service',

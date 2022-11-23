@@ -29,6 +29,9 @@
 
   .included_container {
     .included {
+
+      line-height: ($base-size * 1.5);
+
       &::before {
         font-family: 'Font Awesome 5 Free';
         content: '\f058';
@@ -46,6 +49,7 @@
 
   .annotation {
     position: relative;
+    text-align: center;
 
     &::before {
       font-family: 'Font Awesome 5 Free';
