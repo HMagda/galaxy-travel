@@ -5,7 +5,7 @@ const reducer = (state) => {
 };
 
 export const initialState = {
-  subPages: ['About Us', 'FAQ', 'Careers', 'Investors'],
+  subPages: ['Home Page', 'Costs', 'How to prepare', 'Contact Us'],
   optionsIncluded: {
     basicOptions: {
       title: 'Basic',

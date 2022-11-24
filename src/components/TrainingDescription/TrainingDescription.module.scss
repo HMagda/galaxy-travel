@@ -1,0 +1,78 @@
+@import '../../styles/settings.scss';
+
+.container {
+  width: 80vw;
+  height: min-content;
+  display: flex;
+  margin: $base-size auto;
+  overflow: hidden;
+
+  .image {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    margin: ($base-size * 3);
+
+    img {
+      width: 100%;
+      object-fit: cover;
+      transition: all 1s;
+
+      &:hover {
+        transform: scale(1.25);
+      }
+    }
+
+    @include respond-small {
+      margin: 0;
+    }
+
+    @include respond-medium {
+      margin: 0;
+    }
+  }
+
+  .text {
+    width: 100%;
+    padding: ($base-size * 3);
+  line-height: ($base-size * 1.5);
+
+  h1 {
+    line-height: ($base-size * 2.5);
+  }
+
+    @include respond-small {
+      height: 100%;
+      padding: $base-size 0;
+    }
+
+    @include respond-medium {
+      height: 100%;
+      padding: 0 0 ($base-size * 3) 0;
+    }
+  }
+
+  @include respond-small {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+  }
+
+  @include respond-medium {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+  }
+}
+
+.flex_reverse {
+  flex-direction: row-reverse;
+
+  @include respond-small {
+    flex-direction: column;
+  }
+
+  @include respond-medium {
+    flex-direction: column;
+  }
+}
