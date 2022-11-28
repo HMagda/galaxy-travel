@@ -12,6 +12,10 @@ form {
     &:first-of-type {
       margin-bottom: $base-size;
     }
+
+    &::placeholder {
+      color: rgba($color: $color-dark, $alpha: 0.3);
+    }
   }
   .message {
     background-color: $color-error;

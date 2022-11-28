@@ -28,6 +28,10 @@
 
   textarea {
     padding: $base-size;
+
+    &::placeholder {
+      color: rgba($color: $color-dark, $alpha: 0.3);
+    }
   }
 
   .btn_container {
@@ -42,7 +46,7 @@
       align-self: center;
       background-size: 0 100%;
       background-repeat: no-repeat;
-      transition: all .5s;
+      transition: all 0.5s;
       font-weight: bold;
 
       &.submit {

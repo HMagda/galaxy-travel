@@ -14,7 +14,7 @@
 }
 
 .footer_wrapper {
-  padding: ($base-size * 8);
+  padding: ($base-size * 4);
   display: flex;
   justify-content: space-between;
   justify-content: space-around;
@@ -94,4 +94,9 @@
     align-items: center;
     text-align: center;
   }
+
+  @include respond-small {
+    padding: ($base-size * 8);
+  }
+
 }
