@@ -1,0 +1,11 @@
+@import '../../styles/settings.scss';
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: ($base-size * 10);
+
+  h1 {
+    text-align: center;
+  }
+}
