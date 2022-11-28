@@ -1,11 +1,10 @@
-@import "../../styles/settings.scss";
-@import "../../styles/global.scss";
+@import '../../styles/settings.scss';
+@import '../../styles/global.scss';
 
 form {
   margin-top: ($base-size * 1.5);
   display: flex;
   flex-direction: column;
-  // align-items: center;
 
   input {
     padding: $base-size;
