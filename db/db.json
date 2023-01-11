@@ -25,32 +25,26 @@
     {
       "firstName": "John",
       "email": "john@gmail.com",
-      "textarea": "Bla bla bla 1",
+      "textarea": "lorem ipsum",
       "id": 1
     },
     {
       "email": "anna@mail.com",
       "firstName": "Anna",
-      "textarea": "Bla bla bla 2",
+      "textarea": "Ann gives feedback",
       "id": 2
     },
     {
       "email": "anna@mail.com",
-      "firstName": "anna",
-      "textarea": "Bla bla bla 3",
+      "firstName": "joanna",
+      "textarea": "Does work fine",
       "id": 3
     },
     {
       "email": "email@email.com",
       "firstName": "",
-      "textarea": "Bla bla bla 4",
+      "textarea": "My opinion",
       "id": 4
     },
-    {
-      "email": "m.654@gmail.com",
-      "firstName": "maciek",
-      "textarea": "love",
-      "id": 5
-    }
   ]
 }
