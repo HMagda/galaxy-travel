@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-// import {initialState} from '../../redux/store';
 import styles from './CustomerOpinion.module.scss';
 
 const url = 'https://randomuser.me/api/?results=3';
