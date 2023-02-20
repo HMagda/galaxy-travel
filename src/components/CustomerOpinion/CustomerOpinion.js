@@ -1,11 +1,9 @@
 import React, {useState, useEffect} from 'react';
-// import {initialState} from '../../redux/store';
 import styles from './CustomerOpinion.module.scss';
 
 const url = 'https://randomuser.me/api/?results=3';
 
 const CustomerOpinion = () => {
-  // const [users, setUsers] = useState(initialState.users);
   const [users, setUsers] = useState([]);
 
   const fetchUserData = async () => {
@@ -13,8 +11,6 @@ const CustomerOpinion = () => {
     const users = await resp.json();
     setUsers(users.results);
   };
-
-  //   const imageRef = useRef();
 
   useEffect(() => {
     fetchUserData();
