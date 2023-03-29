@@ -1,6 +1,6 @@
 # Galaxy Travel
 
-Galaxy Travel is a React app that takes you on an immersive journey through space. Designed for both desktop and mobile devices, this app allows users to take part in an exciting and adventurous galaxy trip.
+Galaxy Travel is a React app that takes you on an immersive journey through space. Designed for both desktop and mobile devices. This app allows users to take part in an exciting and adventurous galaxy trip.
 
 # Getting Started
 
