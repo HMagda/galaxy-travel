@@ -1,6 +1,6 @@
 # Galaxy Travel
 
-Galaxy Travel is a React app that takes you on an immersive journey through space. Designed for both desktop and mobile devices. This app allows users to take part in an exciting and adventurous galaxy trip.
+This React app allows you to take part in an exciting and adventurous galaxy trip. Made with TypeScript, SCSS, Formik, Random API, OpenStreetMap API. Designed for both desktop and mobile devices.
 
 # Getting Started
 
@@ -11,7 +11,7 @@ Galaxy Travel is a React app that takes you on an immersive journey through spac
 
 # Features
 - Explore the training section to find all the details about how to get prepared for your trip
-- Details about the Training Center location are available thanks to the OpenStreetMap API
+- Details about the Training Center location are available thanks to the **OpenStreetMap API**
 - Check out the different pricing options in the Pricing section
-- See the Opinion section with customers' photos and data which are generated using the Random API
-- Stay connected with Galaxy Travel through our contact form and newsletter, both built with the Formik library
+- See the Opinion section with customers' photos and data which are generated using the **Random API**
+- Stay connected with Galaxy Travel through our contact form and newsletter, both built with the **Formik** library
